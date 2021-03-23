@@ -1,0 +1,187 @@
+.customTD td,
+th {
+  border-top: 0px !important;
+  border-bottom: 0px !important;
+  color: 182;
+}
+
+.vexsoluciones_customCard {
+  border: 0px !important;
+  box-shadow: 2px 4px #d6d6d6 !important;
+}
+
+.vexsoluciones_customCard_Snippet {
+  border: 0px !important;
+  padding-top: 2rem;
+  margin-left: 1rem;
+}
+
+.vexsoluciones_cart_switch {
+  position: relative;
+  display: inline-block;
+  width: 54px;
+  height: 27px;
+}
+
+.vexsoluciones_cart_switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.vexsoluciones_cart_slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+.vexsoluciones_cart_slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .vexsoluciones_cart_slider {
+  background-color: #2196F3;
+}
+
+input:focus + .vexsoluciones_cart_slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .vexsoluciones_cart_slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded vexsoluciones_cart_sliders */
+
+.vexsoluciones_cart_slider.round {
+  border-radius: 34px;
+}
+
+.vexsoluciones_cart_slider.round:before {
+  border-radius: 50%;
+}
+
+.vexsoluciones_snippet_title {
+  text-transform: capitalize;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.vexsoluciones_comment {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.disabled {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.loading {
+  width: 60px;
+  height: 60px;
+  border-radius: 150px;
+  border: 8px solid #fff;
+  border-top-color: rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -80px;
+  margin-left: -150px;
+  animation: loading 1.2s linear infinite;
+  -webkit-animation: loading 1.2s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .cart__footer .grid {
+    width: 50%;
+    margin-left: auto;
+  }
+
+  .cart__footer .cart__submit {
+    z-index: 2;
+  }
+
+  #vexsoluciones_snippet {
+    position: relative;
+    top: -150px;
+    z-index: 1;
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.col-auto {
+  margin-right: 1rem;
+}
+
+.col-auto label {
+  font-weight: 400;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pl-0 {
+  padding-left: 0 !important;
+}
+
+.ml-0 {
+  margin-left: 0 !important;
+}
+
